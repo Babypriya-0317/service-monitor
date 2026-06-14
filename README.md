@@ -81,3 +81,17 @@ This project can be deployed on a remote Linux server.
 ===============================
 ✅ Service Check Complete!
 ===============================
+
+## Screenshots
+
+### All Services Running
+![Services Running](screenshots/services_running.png)
+
+### Log File Output
+![Log Output](screenshots/log_output.png)
+
+### Sample Log
+![Sample Log](screenshots/sample_log.png)
+
+### Cron Setup
+![Cron Setup](screenshots/cron_setup.png)
