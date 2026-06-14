@@ -17,6 +17,27 @@ and automatically restarts them if they go down.
 - Bash Scripting
 - systemctl
 - cron
+## Important Note
+Run this script with sudo privileges:
+sudo bash service_monitor.sh
+
+## Sample Log Output
+===============================
+Date: 2026-06-14_11-04-51
+SERVICE MONITOR REPORT
+===============================
+[2026-06-14_11-04-51] ssh - DOWN! Attempting restart...
+[2026-06-14_11-04-51] ssh - Restarted Successfully
+[2026-06-14_11-04-51] cron - RUNNING
+[2026-06-14_11-04-51] rsyslog - RUNNING
+===============================
+Service Check Complete
+===============================
+
+## Error Handling
+- Checks if service exists before monitoring
+- Logs failed restart attempts
+- Alerts when service cannot be restarted
 
 ## Project Structure
 service_monitor/

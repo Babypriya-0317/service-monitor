@@ -1,4 +1,10 @@
 #!/bin/bash
+# ---- SUDO CHECK ----
+if [ "$EUID" -ne 0 ]; then
+    echo -e "${RED}Please run this script as root (sudo)!${NC}"
+    echo -e "${YELLOW}Usage: sudo bash service_monitor.sh${NC}"
+    exit 1
+fi
 
 # ---- COLORS ----
 RED='\033[0;31m'
